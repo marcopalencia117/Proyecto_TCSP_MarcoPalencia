@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Arapaima</title>
+    <link rel="stylesheet"
+    href="./style/styles.css">
+</head>
+<body> 
+    <!-- Contenido principal -->
+    <header>
+        <h1>Gimnasio Arapaima</h1>
+        <nav>
+            <ul> 
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="src/view/asistencias.html">asistencias</a></li>
+                <li><a href="src/view/login.html">login</a></li>
+                <li><a href="src/view/registro.html">registro</a></li>
+            </ul>
+        </nav>
+    </header> 
+        
+    <aside>
+        <h2> Menú</h2>
+        <ul>
+            <li>Inicio</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+    </aside>
+    <main> 
+        <section> 
+            <form action ="#" method="post">
+                <label for="documento">Numero de Documento:</label>
+                <input type="text" id="documento" name="documento"
+                 required placeholder="ingrese su documento"
+                  maxlength="10" pattern="[0-9]{10}">
+
+                 <label for="rol">rol:</label>
+                 <select id="rol" name ="rol" required>
+                    <option value="Administrador">Administrador</option>
+                    <option value="aprendiz"selected>Aprendiz</option>
+                    <option value="Instructor">Instructor</option>
+                 </select>
+                 <button type="submit">Consultar</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Gimnasio Arapaima. Todos los derechos reservados.</p>
+    </footer>
+
+   
+</body>
+</html>
